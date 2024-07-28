@@ -2,9 +2,13 @@ from speech_recognition import Microphone, Recognizer
 from keyboard import write, add_hotkey
 from time import sleep
 from threading import Thread
+import pyglet
 from tkinter import Label, Entry, StringVar, Tk, Button
 
 entered_number = "5"
+
+sound1 = pyglet.media.load('on.mp3', streaming=False)
+sound2 = pyglet.media.load('off.mp3', streaming=False)
 
 def save_number():
     global entered_number
@@ -25,8 +29,10 @@ def on_button_click():
         # Преобразование введенного числа в целое число для использования в duration
         duration = int(entered_number)
         start_timer(duration)
+        sound1.play()
         data = r.record(source, duration=duration)
         text = r.recognize_google(data, language='ru')
+        sound2.play()
         write(text)
         # try:
         #     text = r.recognize_google(data, language='ru')
