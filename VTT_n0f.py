@@ -2,7 +2,7 @@ from speech_recognition import Microphone, Recognizer
 from keyboard import write, add_hotkey
 from time import sleep
 from threading import Thread
-import pyglet
+from pyglet import pyglet
 from tkinter import Label, Entry, StringVar, Tk, Button
 
 entered_number = "5"
