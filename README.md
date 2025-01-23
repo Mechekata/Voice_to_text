@@ -8,6 +8,8 @@ It's written in Python. You can turn it into an exe file using the auto py exe l
 # How to use
 First step we need to download all libaries:                                                                                                                                                                          
 
+`pip install pyAudio`
+
 `pip install SpeechRecognition`
 
 `pip install keyboard`
