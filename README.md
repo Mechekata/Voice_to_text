@@ -23,5 +23,5 @@ _If you want with sounds:_ run VTT_n0f.py
 _If you want without sounds:_ run VTT.py
 
 
-![изображение](https://github.com/user-attachments/assets/86f0cc33-8ff7-4fac-a407-41ed1935d4c8)
+![изображение](https://github.com/user-attachments/assets/f4339580-2d0e-4bf5-8ba3-c73c0d32ae8b)
 
